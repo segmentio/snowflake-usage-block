@@ -3,7 +3,7 @@ view: warehouse_metering_history {
 
   dimension: credits_used {
     type: number
-    sql: ${TABLE}.CREDITS_USED * 2.2 ;;
+    sql: ${TABLE}.CREDITS_USED * 2.45 ;;
     alias: [credits]
   }
 
