@@ -7,6 +7,12 @@ view: warehouse_metering_history {
     alias: [credits]
   }
 
+  dimension: compute_credits_used {
+    type: number
+    sql: ${TABLE}.CREDITS_USED ;;
+    alias: [compute_credits]
+  }
+
   dimension_group: start {
     type: time
     timeframes: [
