@@ -68,8 +68,7 @@ view: athena_usage {
     type: sum
     sql: ${TABLE}."DATA_SCANNED_IN_BYTES" / 1073741824;;
     value_format: "0.00"
-    description: "{ value } GB ${ (value / 1024) * 5}"
-    html: {{ rendered_value }} || GB $ || {{ (value / 1024 ) * 5 }} ;;
+    html: {{ rendered_value }}GB - ${{ (value / 1024 ) * 5 }} ;;
   }
 
   set: detail {
