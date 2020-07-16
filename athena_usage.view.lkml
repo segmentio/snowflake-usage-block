@@ -67,6 +67,8 @@ view: athena_usage {
   measure: execution_cost {
     type: sum
     sql: ( ${TABLE}."ENGINE_EXECUTION_TIME_IN_MILLIS" / 1024 ) * 5 ;;
+    value_format: "0.00"
+    html: {{ rendered_value }}GB - ${{ rendered_value | divided_by: 1024 | times: 5 }} ;;
   }
 
   measure: data_scanned_in_gbs {
