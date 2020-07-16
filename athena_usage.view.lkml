@@ -67,9 +67,7 @@ view: athena_usage {
   dimension: data_scanned_in_gbs {
     type: number
     sql: ${TABLE}."DATA_SCANNED_IN_BYTES" / 1073741824;;
-    value_format: "0.00"
-    label: "{ value } GB ${ (value / 1024) * 5}"
-
+    value_format: "{ value } GB ${ (value / 1024) * 5}"
   }
 
   set: detail {
