@@ -54,6 +54,9 @@ explore: storage_usage {}
 
 explore: warehouse_metering_history {}
 
+explore: athena_usage {
+}
+
 # explore: columns {}
 #
 # explore: databases {}
