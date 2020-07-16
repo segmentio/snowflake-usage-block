@@ -64,10 +64,9 @@ view: athena_usage {
     sql: ${TABLE}."ENGINE_EXECUTION_TIME_IN_MILLIS" ;;
   }
 
-  dimension: engine_execution_time_in_gbs {
+  dimension: data_scanned_in_gbs {
     type: number
-    sql: ${TABLE}."ENGINE_EXECUTION_TIME_IN_MILLIS" / 1073741824;;
-    value_format: "0.00 'GB'"
+    sql: ${TABLE}."DATA_SCANNED_IN_BYTES" / 1073741824;;
   }
 
   set: detail {
