@@ -54,8 +54,9 @@ explore: storage_usage {}
 
 explore: warehouse_metering_history {}
 
-explore: athena_usage {
-}
+explore: athena_usage {}
+
+explore: s3_cost_daily {}
 
 # explore: columns {}
 #
