@@ -52,11 +52,15 @@ explore: load_history {
 
 explore: storage_usage {}
 
+explore: table_storage_metrics {}
+
 explore: warehouse_metering_history {}
 
 explore: athena_usage {}
 
-explore: s3_cost_daily {}
+explore: s3_cost {}
+
+explore: aws_service_cost {}
 
 # explore: columns {}
 #

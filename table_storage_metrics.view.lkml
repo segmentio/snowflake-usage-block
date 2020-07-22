@@ -12,9 +12,14 @@ view: table_storage_metrics {
     sql: ${TABLE}.ACTIVE_BYTES ;;
   }
 
-  dimension: active_rows {
-    type: string
-    sql: ${TABLE}.ACTIVE_ROWS ;;
+  measure: active_gbs {
+    type: sum
+    sql: CAST((${TABLE}.ACTIVE_BYTES / 1024 / 1024 / 1024) AS DECIMAL(15,2)) ;;
+  }
+
+  measure: active_rows {
+    type: sum
+    sql: CAST(${TABLE}.ACTIVE_ROWS AS DECIMAL(15,2)) ;;
   }
 
   dimension_group: catalog_created {
