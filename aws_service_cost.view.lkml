@@ -26,6 +26,11 @@ view: aws_service_cost {
     sql: ${TABLE}."DAY" ;;
   }
 
+  dimension: month {
+    type: date_month
+    sql: ${TABLE}."DAY" ;;
+  }
+
   dimension: category {
     type: string
     sql: ${TABLE}."CATEGORY" ;;

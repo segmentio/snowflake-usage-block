@@ -3,6 +3,8 @@ connection: "account_usage"
 # include all the views
 include: "*.view"
 
+include: "dataeng_counters/*.view"
+
 # include all the dashboards
 include: "account_usage_dashboard.dashboard.lookml"
 
@@ -61,6 +63,14 @@ explore: athena_usage {}
 explore: s3_cost {}
 
 explore: aws_service_cost {}
+
+explore: object_counts_calendar_month {}
+
+explore: object_counts_daily {}
+
+explore: object_counts_fluid_month {}
+
+explore: objects_unaccounted {}
 
 # explore: columns {}
 #
