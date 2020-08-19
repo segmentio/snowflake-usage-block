@@ -72,6 +72,21 @@ explore: object_counts_fluid_month {}
 
 explore: objects_unaccounted {}
 
+
+explore: event_counts_cumulative_api_calls {}
+
+explore: event_counts_fluid_metrics {}
+
+explore: event_counts_mtu_stats_calendar_month {}
+
+explore: event_counts_mtu_fluid {}
+
+explore: event_counts_mtu_calendar_month {}
+
+explore: event_counts_unaccounted_sources {}
+
+explore: event_counts_unaccounted_usage {}
+
 # explore: columns {}
 #
 # explore: databases {}
