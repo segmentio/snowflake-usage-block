@@ -85,8 +85,6 @@ explore: event_counts_mtu_calendar_month {}
 
 explore: event_counts_unaccounted_sources {}
 
-explore: event_counts_unaccounted_usage {}
-
 # explore: columns {}
 #
 # explore: databases {}

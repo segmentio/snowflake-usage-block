@@ -2,7 +2,7 @@ view: event_counts_unaccounted_sources {
   derived_table: {
     sql: select
       day,
-      listagg(source_id) as sources,
+      listagg(source_id, ' , ') as sources,
       sum(api_calls) as api_calls
       from main_prod.dataeng_counters_history.source_api_calls_daily
       where workspace_id is null
@@ -25,8 +25,8 @@ view: event_counts_unaccounted_sources {
     sql: ${TABLE}."SOURCES" ;;
   }
 
-  dimension: api_calls {
-    type: number
+  measure: api_calls {
+    type: sum
     sql: ${TABLE}."API_CALLS" ;;
   }
 
