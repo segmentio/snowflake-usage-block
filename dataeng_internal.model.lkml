@@ -85,6 +85,12 @@ explore: event_counts_mtu_calendar_month {}
 
 explore: event_counts_unaccounted_sources {}
 
+explore: event_counts_e2e_anonymous_users {}
+
+explore: event_counts_e2e_api_calls {}
+
+explore: event_counts_e2e_identified_users {}
+
 # explore: columns {}
 #
 # explore: databases {}
