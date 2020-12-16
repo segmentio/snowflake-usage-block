@@ -91,6 +91,8 @@ explore: event_counts_e2e_api_calls {}
 
 explore: event_counts_e2e_identified_users {}
 
+explore: glue_and_emr {}
+
 # explore: columns {}
 #
 # explore: databases {}
