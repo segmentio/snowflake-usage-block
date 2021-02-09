@@ -4,10 +4,9 @@ view: athena_usage {
         QUERY_ID,
         QUERY_TEXT,
         case
-            when QUERY_TEXT like '%dataeng_counters_stage.apilogs_raw_stream%' then 'stage - apilogs'
             when QUERY_TEXT like '%dataeng_counters.apilogs_raw_stream%' then 'production - apilogs'
-            when QUERY_TEXT like '%dataeng_counters_stage.object_tracking_raw_stream%' then 'stage - objects'
             when QUERY_TEXT like '%dataeng_counters.object_tracking_raw_stream%' then 'production - objects'
+            when QUERY_TEXT like '%dataeng_counters.functions_tracking_raw_stream%' then 'production - functions'
             else 'other'
         end as query_group,
         SUBMISSION_TIMESTAMP,
