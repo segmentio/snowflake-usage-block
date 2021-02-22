@@ -93,6 +93,14 @@ explore: event_counts_e2e_identified_users {}
 
 explore: glue_and_emr {}
 
+explore: functions_destinations_counts_by_day {}
+
+explore: functions_destinations_execution_time {}
+
+explore: functions_destinations_error_rates {}
+
+explore: functions_destinations_invocations {}
+
 # explore: columns {}
 #
 # explore: databases {}
