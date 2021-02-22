@@ -1,7 +1,7 @@
 view: functions_destinations_counts_by_day {
   derived_table: {
     sql: SELECT
-          DATE(HOUR),
+          DATE(HOUR) AS DAY,
           COUNT(DISTINCT WORKSPACE_ID) AS UNIQUE_WORKSPACES,
           SUM(INVOCATION_COUNT) AS INVOCATION_COUNT,
           SUM(ERROR_COUNT) AS ERROR_COUNT,
@@ -17,9 +17,9 @@ view: functions_destinations_counts_by_day {
     drill_fields: [detail*]
   }
 
-  dimension: datehour {
+  dimension: day {
     type: date
-    sql: ${TABLE}."DATE(HOUR)" ;;
+    sql: ${TABLE}."DAY" ;;
   }
 
   dimension: unique_workspaces {
@@ -43,6 +43,6 @@ view: functions_destinations_counts_by_day {
   }
 
   set: detail {
-    fields: [datehour, unique_workspaces, invocation_count, error_count, throttle_count]
+    fields: [day, unique_workspaces, invocation_count, error_count, throttle_count]
   }
 }
