@@ -101,6 +101,16 @@ explore: functions_destinations_error_rates {}
 
 explore: functions_destinations_invocations {}
 
+explore: snowflake_metadata_daily_usage{}
+
+explore: snowflake_metadata_bi_slow_query{}
+
+explore: customer_dashboard_tracks{}
+
+explore: customer_dashboard_quick_search{}
+
+explore: customer_dashboard_page_viewed{}
+
 # explore: columns {}
 #
 # explore: databases {}
