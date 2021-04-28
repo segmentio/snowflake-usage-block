@@ -111,6 +111,8 @@ explore: customer_dashboard_quick_search{}
 
 explore: customer_dashboard_page_viewed{}
 
+explore: functions_destinations_hourly{}
+
 # explore: columns {}
 #
 # explore: databases {}
