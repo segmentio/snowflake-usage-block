@@ -1,7 +1,7 @@
 view: functions_destinations_hourly {
   derived_table: {
     sql: select * from main_prod.dataeng_counters_history.functions_destinations_hourly
-      where date(hour) >= current_date - interval '5 day'
+      where date(hour) >= current_date - interval '3 day'
       and workspace_id = 'YbzRgtcu6i'
        ;;
   }
